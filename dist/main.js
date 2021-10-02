@@ -1,0 +1,1 @@
+document.getElementById("submit-btn").addEventListener("click",(e=>{console.log(document.getElementById("search-input").value)}));
