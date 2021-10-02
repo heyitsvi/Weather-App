@@ -5,10 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <script scr="main.js" defer></script>
+    <script src="main.js" defer></script>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    
+    <h1 id="title">Weather App</h1>
+    <div id="content">
+        <div id="data"></div>
+            <div id="search">
+                <label for="search-input">City</label>
+                <div id="search-box">
+                    <span class="material-icons">
+                        search
+                        </span>
+                    <input type="text" id="search-input">
+                    <button type="submit" id="submit-btn">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
