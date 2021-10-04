@@ -18,7 +18,7 @@ body{
 #content{
     display: grid;
     height: 600px;
-    width: 100vw;
+    width: auto;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'left right';
@@ -28,16 +28,10 @@ body{
 
 
 #search{
-    /* grid-area: 'right'; */
-    /* align-self: center; */
     display: flex;
-    /* align-items: center; */
     margin-top: 50px;
     gap: 10px;
     justify-self: center;
-    /* background-color: salmon; */
-    /* width: 300px;
-    height: 30px; */
 }
 
 label{
@@ -49,8 +43,6 @@ label{
 input[type="text"]{
     width: 300px;
     height: 30px;
-    /* border-radius: 10px; */
-    /* box-shadow: 2px 2px white; */
     background-color: rgba(100%,100%,100%,60%);
     outline: none;
     border: none;
@@ -60,7 +52,6 @@ input[type="text"]{
     font-size: 28px !important;
     align-self: center;
     padding-left: 5px;
-    /* color: rgba(100%,100%,100%,90%); */
     color: rgb(255, 40, 24);
 }
 
@@ -70,13 +61,10 @@ input[type="text"]{
     background-color: rgba(100%,100%,100%,90%);
     border-radius: 20px;
     grid-auto-flow: column;
-
     grid-template-columns: 35px 1fr 60px;
 }
 
 #submit-btn{
-    /* background-color: transparent; */
-    /* border: none; */
     border: thin;
     overflow: hidden;
     border-radius: 0px 10px 10px 0px;
@@ -86,11 +74,8 @@ input[type="text"]{
 
 #search-input{
     align-self: center;
-    /* justify-self: flex-start; */
     background-color: rgba(100%,100%,100%,10%);
     font-size: 20px;
-
-    /* margin: 0px 20px 0px 0px; */
 }
 
 #error-message{
