@@ -22,6 +22,7 @@ body{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'left right';
+    justify-items: center;
 }
 
 
@@ -70,7 +71,17 @@ input[type="text"]{
     border-radius: 20px;
     grid-auto-flow: column;
 
-    grid-template-columns: 35px 1fr 15px;
+    grid-template-columns: 35px 1fr 60px;
+}
+
+#submit-btn{
+    /* background-color: transparent; */
+    /* border: none; */
+    border: thin;
+    overflow: hidden;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgba(56, 243, 224, 0.9);
+    font-family: 'Cascadia Mono';
 }
 
 #search-input{
@@ -82,4 +93,88 @@ input[type="text"]{
     /* margin: 0px 20px 0px 0px; */
 }
 
+#error-message{
+    order: 3;
+    font-size: 18px;
+    margin-top: 5px;
+    color:rgba(255, 255, 255, 0.9);
+}
 
+#weather-card{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:20px 80px 20px 100px 20px 80px 20px 80px 20px 80px;
+    grid-template-areas: "city-header city-header"
+                        "city city"
+                        ".  temperature-header"
+                        "icon temperature"
+                        "description-header description-header"
+                        "description description"
+                        "feelslike-header feelslike-header"
+                        "feelslike feelslike"
+                        "humidity-header humidity-header"
+                        "humidity humidity";
+    align-items: center;
+    justify-items: center;
+    width: 500px;
+    justify-content: center;
+    border-radius: 10px;
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 30px;
+    color: rgba(255, 255, 255,0.9);
+}
+
+#city-header{
+    grid-area: city-header;
+}
+
+#temperature-header{
+    grid-area: temperature-header;
+}
+
+#description-header{
+    grid-area: description-header;
+}
+
+#feelslike-header{
+    grid-area: feelslike-header;
+}
+
+#humidity-header{
+    grid-area: humidity-header;
+}
+
+#city-header, #temperature-header, #description-header, #feelslike-header, #humidity-header{
+    font-size: 20px;
+}
+
+#city{
+    grid-area: city;
+    display: block;
+}
+
+#icon{
+    grid-area:icon;
+    height: 100px;
+}
+
+
+#temperature{
+    grid-area: temperature;
+}
+
+#description{
+    grid-area: description;
+}
+
+#feels-like{
+    grid-area: feelslike;
+}
+
+#humidity{
+    grid-area: humidity;
+}
