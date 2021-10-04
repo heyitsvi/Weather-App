@@ -83,7 +83,7 @@ function DomOp(){
     }
 
     function getURL(city){
-        let url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=13e3b1f659caaf6f9037465e97315952&units=metric";
+        let url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=13e3b1f659caaf6f9037465e97315952&units=metric";
         return url;
     }
 
